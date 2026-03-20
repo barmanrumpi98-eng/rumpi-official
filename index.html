@@ -10,7 +10,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, sans-serif;
 }
 
 body{
@@ -24,6 +24,7 @@ color:white;
 padding:15px;
 text-align:center;
 font-size:22px;
+font-weight:bold;
 }
 
 /* Navbar */
@@ -35,7 +36,7 @@ background:#333;
 
 nav a{
 color:white;
-padding:12px;
+padding:12px 20px;
 text-decoration:none;
 }
 
@@ -43,7 +44,7 @@ nav a:hover{
 background:#ff4d6d;
 }
 
-/* Hero */
+/* Hero Section */
 .hero{
 height:90vh;
 background:url("./myphoto.jpg") no-repeat center center/cover;
@@ -55,25 +56,39 @@ color:white;
 text-align:center;
 }
 
+/* Name */
 .hero h1{
-font-size:35px;
+font-size:42px;
+text-shadow:2px 2px 8px black;
+animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2{
+font-size:22px;
+margin-top:10px;
+color:#ffd6e0;
+animation: fadeIn 3s ease-in-out;
 }
 
 .hero p{
-font-size:16px;
+margin-top:5px;
+animation: fadeIn 4s ease-in-out;
 }
 
+/* Button */
 .btn{
-margin-top:10px;
+margin-top:15px;
 padding:10px 20px;
 background:#ff4d6d;
 color:white;
 border:none;
+cursor:pointer;
+border-radius:5px;
 }
 
 /* Gallery */
 .gallery{
-padding:20px;
+padding:30px;
 text-align:center;
 }
 
@@ -91,6 +106,12 @@ color:white;
 text-align:center;
 padding:10px;
 }
+
+/* Animation */
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
 </style>
 
 </head>
@@ -106,10 +127,11 @@ padding:10px;
 <a href="#">Gallery</a>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <div class="hero">
-<h1>Welcome 💖</h1>
-<p>It's My Official Website</p>
+<h1>Rumpi Barman 💖</h1>
+<h2>Welcome to My World 🌸</h2>
+<p>It's My Official Website ✨</p>
 <button class="btn">Follow Me</button>
 </div>
 
